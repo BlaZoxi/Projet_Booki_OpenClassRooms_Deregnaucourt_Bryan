@@ -1,0 +1,479 @@
+/*Couleurs*/
+
+:root {
+  --whiteblue: #deebff;
+  --blue: #0065fc;
+  --white: #f2f2f2;
+  --gris: #d9d9d9;
+}
+
+
+ main {
+    margin:auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway' ;
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
+    font-family: 'Raleway';
+  }
+
+  /*header*/
+
+  #logo{
+    width: 61px;
+  }
+
+  header{
+    margin: auto;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:  0 30px 30px;
+    height: 100px;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    height: 100px;
+  }
+  nav ul li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 117px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+}
+  nav ul li a {
+    color: black;
+    transition: 0.3s;
+  }
+
+  nav li a:hover:before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: var(--blue);
+    top: 0;
+    left: 0;
+  }
+
+  .headerlink:hover{
+    color: var(--blue);
+  }
+
+/*Section Pays Filtre et Info*/
+
+/*Bar de Recherche*/
+
+.pay-filtre-info {
+  margin: 0 30px;
+}
+.pay-filtre-info .titreh1 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.pay-filtre-info .p1 {
+  opacity: 0.5;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.header-containers p i {
+  color: var(--blue);
+  font-size: 10px;
+  border: 1px solid var(--gris);
+  border-radius: 50%;
+  padding: 3px 5px;
+}
+
+.recherchepays i {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 16px 0 0 16px;
+}
+
+.recherchepays {
+  border: 1px solid var(--white);
+  border-radius: 16px;
+  height: 49px;
+  display: flex;
+  width: 360px;
+  margin: 30px ;
+}
+
+.recherche {
+  width: 50%;
+  border: none;
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.recherche:focus {
+  color: var(--blue);
+  outline: none;
+}
+
+.recherche::placeholder {
+  font-weight: bold;
+  color: black;
+}
+
+.boutton1 {
+  width: 40%;
+  border-radius: 0 16px 16px 0;
+  background-color: var(--blue);
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  position: relative;
+}
+
+.boutton1 i{
+  display: none;
+}
+
+/* Filtre */
+
+.filtre{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.filtre h2{
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.filtreflexbox{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  min-height: 50px;
+}
+
+.filtre {
+  height: 45px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--gris);
+  border-radius: 25px;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.filtre i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  color: var(--blue);
+  transition: 0.3s;
+}
+
+.filtre:hover {
+  background-color: var(--whiteblue);
+  cursor: pointer;
+}
+
+.filtre p {
+  font-size: 16px;
+  font-weight: 900;
+  word-wrap: break-word;
+}
+
+.filtre1{
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+h2{
+  margin-right: 30px;
+  font-size: 18px;
+}
+
+.info2 {
+  color: var(--blue);
+  font-size: 10px;
+  border: 1px solid var(--gris);
+  border-radius: 50%;
+  padding: 3px 5px;
+  margin: 30px 0 0 30px;
+}
+
+/* Gauche*/
+
+.section1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.resultrecherche{
+  background-color: var(--white);
+  padding: 42px 40px;
+  margin: 0 20px;
+  width: 65%;
+  border-radius: 25px;
+  font-size: 15px;
+}
+
+.resultrecherche h2{
+  padding: 0 0 23px 0;
+  font-size: 22px;
+}
+
+.result-recherche-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.hotelresult{
+  padding: 3px;
+  width: 30%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 40%);
+  height: 200px;
+}
+
+.hotelresult img{
+  object-fit: cover;
+  height: 125px;
+  width: 100%;
+  border-radius: 17px 17px 0 0;
+}
+
+.hotelresult h3{
+  padding-left: 10px;
+  font-size:17px ;
+  color: black;
+  margin: 4px 0;
+}
+
+.hotelresult p{
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  margin: auto;
+}
+
+.hotelpop{
+  padding: 3px;
+  width: 30%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 40%);
+}
+
+.hotelpop img{
+  object-fit: cover;
+  height: 145px;
+  width: 100%;
+  border-radius: 17px 17px 0 0;
+}
+
+.hotelpop h3{
+  padding-left: 10px;
+  color: black;
+}
+
+.hotelpop p{
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+}
+
+
+.stars{
+  padding-bottom: 10px;
+  padding-left: 10px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.stars2{
+  padding-left: 10px;
+  padding-top: 6px;
+}
+
+
+.bluestars{
+  color: var(--blue);
+}
+
+.grisstar{
+  color: var(--gris);
+}
+
+.more{
+  display: inline-block;
+  margin: 30px 0 10px 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+/* Droite */
+
+.populaires{
+  background-color: var(--white);
+  padding: 42px 40px;
+  margin: 0 20px;
+  width: 25%;
+  border-radius: 25px;
+}
+
+.titrepopulaires{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 23px 0 ;
+}
+
+.titrepopulaires h2{
+  font-size: 18px;
+}
+
+.titrepopulaires i{
+  color: var(--blue);
+}
+
+.flexdroite{
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.droiteresult a {
+  display: flex;
+}
+
+.droiteresult{
+  width: 100%;
+}
+
+.droiteresult-2{
+  position: relative;
+}
+
+.droiteresult-2 span{
+  padding-left: 0;
+}
+
+.droiteresult img{
+  object-fit: cover;
+  border-radius: 17px 0 0 17px;
+  width: 40%;
+}
+
+.prix{
+  padding-left: 10px;
+  color: black;
+}
+
+/* Activités à Marseille */
+
+.activites {
+  margin: 40px 25px;
+}
+
+.activites h2{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.activites-div{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.activites-div h2{
+  height: 20px;
+  font-size: 1em;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.activites-div img{
+  object-fit: cover;
+  border-radius: 17px 17px 0 0;
+  width: 100%;
+  height: 90%;
+}
+
+.activites-box{
+  width: 23%;
+  padding: 0;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px 0px rgb(0 0 0 / 38%);
+}
+
+/* Footer */
+
+footer{
+  margin: 0 auto;
+}
+
+.all-footer{
+  display: flex;
+  margin: 70px 20px 0 20px;
+  background-color: var(--white);
+}
+
+.footer{
+  width: 34%;
+}
+
+.footer h3 {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 13px;
+  font-family: 'Raleway';
+  margin-left: 40px;
+}
+
+.footer a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: black;
+}
+
+ul{
+  list-style: none;
+}
